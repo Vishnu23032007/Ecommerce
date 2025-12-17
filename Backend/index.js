@@ -6,12 +6,13 @@ import { checkSchema, validationResult, matchedData } from "express-validator";
 import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import cors from "cors";
+import dotenv from "dotenv";
 
 import { createUserValidationSchema } from "./utils/validationSchemas.js";
 import { User } from "./mongoose/schema/UserSchema.js";
 import MainRouter from "./routes/MainRouter.js";
 
-mongoose.connect("mongodb://localhost")
+mongoose.connect(process.env.MONGO_URL)
     .then(() => console.log("Database connected successfully"))
     .catch((error) => console.log(error));
 
@@ -24,7 +25,7 @@ app.use(cors({
 app.use(express.json());
 
 app.use(session({
-    secret: "this is a secret key",
+    secret: process.env.SESSION_SECRET,
     saveUninitialized: false,
     resave: false,
     cookie: {
@@ -74,7 +75,7 @@ passport.deserializeUser( async (id , done) => {
 });
 app.use(MainRouter);
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log(`App is running on port ${PORT}`);
