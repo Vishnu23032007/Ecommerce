@@ -1,0 +1,86 @@
+.w-35{
+    width: 35%;
+}
+
+.heroText {
+    font-size: 75px;
+    font-style : bold;
+}
+
+.colour {
+    background: linear-gradient(90deg,
+            #40c7df,
+            #2563eb,
+            #5d00ff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.homePage {
+    height: 100vh;
+
+    background-image:
+        linear-gradient(to right,
+            rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.6),
+            rgba(37, 99, 235, 0.25)),
+        url("./assets/backgroundImage.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /*     display: flex;
+        flex-direction: column; */
+}
+
+.description{
+    color: var(--text-secondary);
+    font-size: 20px;
+}
+
+.featuresGrid{
+    display: flex;
+
+    margin-top: 25px;
+    gap: 25px;
+    justify-content : space-evenly;
+    align-items: center;
+    height: 200px;
+    background-color: white;
+}
+
+.featuresDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+
+    border-radius: 25px;
+}
+
+.icons{
+    font-size: 25px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aquamarine;
+    border: 1px solid green;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.title{
+    font-size: 20px;
+}
+.description{
+    font-size: 15px;
+}

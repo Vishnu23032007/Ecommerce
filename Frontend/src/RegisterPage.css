@@ -1,0 +1,23 @@
+
+
+.registerPage{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: var(--bg-main);
+}
+
+.formContainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 500px;
+
+    background-color: var(--bg-card);
+}

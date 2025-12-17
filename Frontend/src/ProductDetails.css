@@ -1,0 +1,63 @@
+.categoryAndRating {
+    display: flex;
+
+}
+
+.productCategory {
+    font-size: large;
+    font-weight: 700;
+    color: aqua;
+}
+
+.namePriceAndDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.productName {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.productPrice {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.featuresList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px 40px;
+    margin-top: 24px;
+}
+
+.featureCard {
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #f8fafc;
+}
+
+.addToCart {
+    width: 60%;
+    height: 50px;
+}
+
+.heartIcon {
+    border: 1px solid var(--bg-secondary);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.heartIcon:hover {
+    transform: scale(1.1);
+    background-color: #f1f5f9;
+}

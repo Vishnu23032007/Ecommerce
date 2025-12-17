@@ -1,0 +1,48 @@
+:root {
+    /* Brand / Primary */
+    --primary: #2563EB;
+    /* Main blue */
+    --primary-hover: #1D4ED8;
+
+    /* Accent */
+    --accent: #10B981;
+    /* Success / offer green */
+    --accent-hover: #059669;
+
+    /* Backgrounds */
+    --bg-main: #F8FAFC;
+    /* Page background */
+    --bg-card: #FFFFFF;
+    /* Cards, forms */
+    --bg-secondary: #E5E7EB;
+    /* Sections */
+
+    /* Text */
+    --text-primary: #1E293B;
+    /* Headings */
+    --text-secondary: #64748B;
+    /* Sub text */
+    --text-light: #FFFFFF;
+
+    /* Borders & Dividers */
+    --border-light: #CBD5E1;
+
+    /* Status */
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --error: #EF4444;
+}
+
+body {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+}
+
+input[type="checkbox"] {
+    accent-color: #2563EB;
+}
+
+input[type="range"] {
+    accent-color: #2563EB;
+    /* your primary color */
+}

@@ -1,0 +1,63 @@
+.productsPage {
+    display: flex;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.rangeInput {
+    width: 300px;
+}
+
+.range-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    width: 300px;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.productListSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filtersSection {
+    width: 280px;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.filters-hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    
+}
+
+.meta-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
