@@ -27,7 +27,7 @@ function Products() {
 
     async function addToCart(id){
         
-        const response  = await fetch("http://localhost:3000/api/cart/add" , {
+        const response  = await fetch("http://13.53.101.85:3000/api/cart/add" , {
             method : "POST",
             credentials : "include",
             headers : {"Content-Type": "application/json"},
