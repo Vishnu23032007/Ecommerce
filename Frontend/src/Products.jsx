@@ -18,7 +18,7 @@ function Products() {
 
     useEffect(() => {
 
-        fetch("http://localhost:3000/api/products")
+        fetch("http://13.53.101.85:3000/api/products")
             .then(response => response.json())
             .then(data => setProductList(data))
             .catch(error => console.log(error));
