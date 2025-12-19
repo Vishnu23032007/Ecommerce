@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URL)
 const app = express();
 
 app.use(cors({
-    origin : "http://13.53.127.30:3000",
+    origin : "http://13.53.101.85:3000",
     credentials : true
 }));
 app.use(express.json());
