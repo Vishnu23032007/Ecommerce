@@ -17,7 +17,7 @@ function LoginPage() {
         const userData = { email, password };
 
         try {
-            const response = await fetch("http://localhost:3000/api/login", {
+            const response = await fetch("http://13.53.101.85:3000/api/login", {
                 method: "POST",
                 credentials : "include",
                 headers: { "Content-Type": "application/json" },
@@ -25,7 +25,7 @@ function LoginPage() {
             })
 
             if(response.ok){
-                await fetch("http://localhost:3000/api/me", {credentials : "include"});
+                await fetch("http://13.53.101.85:3000/api/me", {credentials : "include"});
                 alert("Login Successfull");
                 navigate("/");
                 console.log(response);

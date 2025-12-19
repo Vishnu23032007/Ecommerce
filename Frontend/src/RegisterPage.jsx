@@ -33,7 +33,7 @@ function RegisterPage() {
         const userData = {userName , email , password};
         
         try{
-            const response = await fetch("http://localhost:3000/api/register",{
+            const response = await fetch("http://13.53.101.85:3000/api/register",{
                 method : "POST" , 
                 credentials : "include",
                 headers : {"Content-Type" : "application/json"},

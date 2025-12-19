@@ -8,13 +8,9 @@ function CartPage() {
 
     const [cartList, setCartList] = useState({ items: [] });
 
-    useEffect(() => {
-        fetchCart();
-    } , [])
-
     function fetchCart(){
 
-        fetch("http://localhost:3000/api/cart",{
+        fetch("http://13.53.101.85:3000/api/cart",{
             credentials : "include"
         })
         .then(response => response.json())
@@ -22,11 +18,17 @@ function CartPage() {
         .catch(error => console.log(error));
     }
 
+    useEffect(() => {
+        fetchCart();
+    } , [])
+
+    
+
     function handleQuantityIncrement(id){
 
         const bodyData = {productId : id, action : "increase"}
 
-        fetch("http://localhost:3000/api/cart/update" , {
+        fetch("http://13.53.101.85:3000/api/cart/update" , {
             method : "PUT",
             credentials : "include",
             headers : {"Content-Type" : "application/json"},
@@ -39,7 +41,7 @@ function CartPage() {
     function handleQuantityDecrement(id){
         const bodyData = {productId : id , action : "decrease"}
 
-        fetch("http://localhost:3000/api/cart/update" , {
+        fetch("http://13.53.101.85:3000/api/cart/update" , {
             method : "PUT",
             credentials : "include",
             headers : {"Content-Type" : "application/json"},
